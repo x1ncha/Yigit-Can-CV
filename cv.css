@@ -1,0 +1,218 @@
+:root{
+    --color1:#05c98e;
+    --color2:#240e88;
+    --color3:#501471;
+    --colorWhite:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(to top right, var(--color1), var(--color2) );
+    background-color:bisque ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin:50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, .1);
+}
+.container .left_Slide{
+    position: relative;
+    background-color: var(--color3);
+    padding:40px;
+}
+.ProfileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.ProfileText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ProfileText .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.ProfileText h2{
+    color: var(--colorWhite);
+    font-size: 1.2rem;
+    margin-top: 14px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    
+}
+.ProfileText h2 span{
+    font-size: 1em;
+    font-weight: 300;
+}
+.contanctInfo{
+    padding-top: 40px;
+}
+.title{
+    color: var(--colorWhite);
+    text-transform:uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contanctInfo ul{
+    position: relative;
+}
+.contanctInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 23px 0;
+    cursor: pointer;
+}
+.contanctInfo ul li .icon{
+    display: inline-block;
+    width: 18px;
+    color: #03a9f4;
+}
+.contanctInfo ul li span{
+    color: var(--colorWhite);
+    font-weight: 300;
+}
+/* education */
+.contactInfo.education li{
+    margin-top: 0px;
+    list-style: none;
+}
+.contactInfo.education h5{
+    color:#03a9f4;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.contactInfo.education h4:nth-child(2){
+    color: var(--colorWhite);
+    font-weight: 400;
+}
+.contactInfo.education h4{
+    color: var(--colorWhite);
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* language*/
+.contactInfo.language h3{
+    margin-top: 15px;
+}
+.contactInfo.language ul li{
+    list-style: none;
+}
+.contactInfo.language .text{
+    color: var(--colorWhite);
+}
+.contactInfo.language .perecent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 3px;
+}
+.contactInfo.language .perecent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+/*RIGHT SLIDE */
+.container .right_Slide{
+    position: relative;
+    background-color: var(--colorWhite);
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+    
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #10394e;
+    font-weight: 600;
+}
+.about .box .year_company h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+/* Skills */
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: #10394e;
+    font-weight: 600; 
+}
+.skills .box .perecent{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: #f0f0f0;
+}
+.skills .box .perecent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
